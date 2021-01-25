@@ -38,18 +38,11 @@ class Event
   end
   
   def to_s
-    puts ">Title : #@title"
-    puts ">Date of event : #@start_date"
-    puts ">Duration : #@duration"
-    puts ">Attendees : #@attendees"
+    puts "> Meeting title: #{self.title}"
+    puts "> Beginning of meeting: #{self.start_date.strftime("%Y-%m-%d %H:%M")}"
+    puts "> End of meeting: #{self.end_date.strftime("%Y-%m-%d %H:%M")}"
+    puts "> Passed: #{self.is_past?}"
+    puts "> Comming Up: #{self.is_future?}"
+    puts "> Starting soon: #{self.is_soon?}"
   end
-  
-
-
-
-
-
-
-
-
 end
