@@ -1,4 +1,3 @@
-require_relative "../app"
 require 'bundler'
 Bundler.require
 
@@ -20,7 +19,7 @@ class User
   def self.find_by_email(user_email)
     @@all_user.each do |i|
       if i.user_email == email
-        return User.email
+        return User.age
       end
     end
   end
