@@ -18,8 +18,8 @@ class User
 
   def self.find_by_email(user_email)
     @@all_user.each do |i|
-      if i.user_email == email
-        return User.age
+      if i.email == user_email
+        return i.email
       end
     end
   end
