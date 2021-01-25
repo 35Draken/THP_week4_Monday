@@ -29,7 +29,7 @@ class Event
     @start_date < Time.now
   end
   
-  def is_futur?
+  def is_future?
     @start_date > Time.now
   end
 
